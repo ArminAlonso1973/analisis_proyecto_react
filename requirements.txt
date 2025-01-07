@@ -1,2 +1,7 @@
-openai==0.27.2
-python-dotenv
+openai==1.5.0
+python-dotenv==1.0.0
+pylint==3.0.3
+astroid==3.0.1
+networkx==3.2.1
+matplotlib==3.8.2
+pytest==7.4.3
