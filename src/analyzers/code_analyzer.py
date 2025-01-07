@@ -7,7 +7,7 @@ from ..core.config import AnalyzerConfig
 class CodeAnalyzer:
     def __init__(self, config: AnalyzerConfig):
         self.config = config
-        self.client = openai.OpenAI(api_key=config.openai_api_key)
+        self.client = openai.Client(api_key=config.openai_api_key)
         
     async def analyze_file(self, file_path: Path) -> Dict[str, Any]:
         """Analiza un archivo individual usando OpenAI."""
